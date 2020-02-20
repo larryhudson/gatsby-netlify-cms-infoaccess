@@ -30,6 +30,11 @@ collections:
   - name: "pages"
     label: "Pages"
     create: true
+    fields:
+     - {label: "Title", name: "title", widget: "string"}
+     - {label: "Body", name: "body", widget: "markdown"}
+     - {label: "Featured Image", name: "featuredimage", widget: image}
+     - {label: "Description", name: "description", widget: "text"}
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
